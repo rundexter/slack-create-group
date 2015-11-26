@@ -4,23 +4,30 @@
 {
     //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "name",
+            "title":"Name of group to create"
         }
-        */
     ],
     //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "ok",
+            "title":"ok"
+        },
+        {
+          "id": "group_id",
+          "title":"group id"
+        },
+        {
+          "id": "group_name",
+          "title":"group name"
+        },
+        {
+          "id": "group_latest",
+          "title":"group latest"
         }
-      */
     ],
-    "title": "Slack Create Group" /* Required.A display name for the module */
+    /* Required.A display name for the module */
+    "title": "Slack Create Group"
 }

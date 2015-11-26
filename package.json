@@ -1,12 +1,13 @@
 {
-    "name": "slack-create-group",
-    "version": "0.0.1",
-    "description": "",
-    "main": "index.js",
-    "author": "Alexander",
-    "license": "ISC",
-    "private": true,
-    "dependencies": {
-        "lodash": "^3.9.3"
-    }
+  "name": "slack-create-group",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "Alexander",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "slack-api-client": "0.0.5"
+  }
 }
