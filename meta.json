@@ -5,6 +5,10 @@
     //Required. Inputs the module expects.
     "inputs": [
         {
+          "id": "token",
+          "title":"Authentication token"
+        },
+        {
             "id": "name",
             "title":"Name of group to create"
         }
