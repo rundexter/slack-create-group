@@ -32,6 +32,7 @@
           "title":"group latest"
         }
     ],
+    "icon": "slack",
     /* Required.A display name for the module */
     "title": "Slack Create Group"
 }
