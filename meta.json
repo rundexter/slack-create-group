@@ -5,10 +5,6 @@
     //Required. Inputs the module expects.
     "inputs": [
         {
-          "id": "token",
-          "title":"Authentication token"
-        },
-        {
             "id": "name",
             "title":"Name of group to create"
         }
@@ -32,6 +28,10 @@
           "title":"group latest"
         }
     ],
+    "providers": [{
+        "name": "slack",
+        "scopes": ["groups:write"]
+    }],
     "icon": "slack",
     /* Required.A display name for the module */
     "title": "Slack Create Group"
