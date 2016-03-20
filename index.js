@@ -1,16 +1,18 @@
-var util = require('./util.js'),
-    _ = require('lodash'),
-    SlackClient = require('slack-node');
+var util        = require('./util.js')
+  , _           = require('lodash')
+  , SlackClient = require('slack-node')
+;
 
 var pickInputs = {
         'name': 'name'
     },
     pickOutputs = {
-        'ok': 'ok',
-        'group_id': 'group.id',
-        'group_name': 'group.name',
-        'group_latest': 'group.latest'
-    };
+        'ok'           : 'ok',
+        'group_id'     : 'group.id',
+        'group_name'   : 'group.name',
+        'group_latest' : 'group.latest'
+    }
+;
 
 module.exports = {
     /**
@@ -20,10 +22,11 @@ module.exports = {
      * @param {AppData} dexter Container for all data used in this workflow.
      */
     run: function(step, dexter) {
-        var inputs = util.pickInputs(step, pickInputs),
-            validateErrors = util.checkValidateErrors(inputs, pickInputs),
-            token = dexter.provider('slack').credentials('access_token'),
-            slack = new SlackClient(token);
+        var inputs         = util.pickInputs(step, pickInputs)
+          , validateErrors = util.checkValidateErrors(inputs, pickInputs)
+          , token          = dexter.provider('slack').credentials('access_token')
+          , slack          = new SlackClient(token)
+        ;
 
         if (validateErrors)
             return this.fail(validateErrors);
